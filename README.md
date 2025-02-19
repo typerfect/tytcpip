@@ -1,2 +1,2 @@
 # tytcpip
-implement tcpip stack with go lanuange
+implement tcpip stack with go language 
