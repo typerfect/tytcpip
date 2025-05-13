@@ -1,13 +1,13 @@
-package tap
+package main
 
 import (
 	"log"
 	"os/exec"
-	"testing"
+	"tytcpip/tcpip/link/tap"
 )
 
-func TestTap(t *testing.T) {
-	tap, err := NewTap("tapty")
+func main() {
+	tap, err := tap.NewTap("tap0")
 	if err != nil {
 		log.Fatalln("new tap failed, ", err)
 	}
